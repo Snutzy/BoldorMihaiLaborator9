@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BoldorMihai.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+            <Image
+                Source="imaginemainpage.png"
+                HeightRequest="500"
+                Aspect="AspectFit"
+                SemanticProperties.Description="Imagine pagina de bun venit" />
+
+            <Label
+                Text="Salutare!"
+                Style="{StaticResource Headline}"
+                SemanticProperties.HeadingLevel="Level1" />
+
+            <Label
+                Text="Bine ai venit &#10; in aceasta aplicatie!"
+                Style="{StaticResource SubHeadline}"
+                SemanticProperties.HeadingLevel="Level2"
+                SemanticProperties.Description="Welcome to dot net Multi platform App U I" />
+
+            <Button
+                x:Name="CounterBtn"
+                Text="Apasa aici!" 
+                SemanticProperties.Hint="Numara de cate ori ai apasat pe buton"
+                Clicked="OnCounterClicked"
+                HorizontalOptions="Fill" />
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
